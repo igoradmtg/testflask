@@ -5,7 +5,7 @@ Test flask python
 
 pip install flask
 
-copy file app.py to local folder
+copy file app.py and other files to local folder
 
 # Usage
 
