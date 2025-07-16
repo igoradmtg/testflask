@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Наши товары</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        h1 { color: #333; }
+        ul { list-style-type: square; }
+        li { margin-bottom: 0.5em; }
+    </style>
+</head>
+<body>
+    <h1>Список наших товаров</h1>
+    {% if products %}
+        <ul>
+            {% for product in products %}
+                <li>{{ product }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Товаров пока нет.</p>
+    {% endif %}
+</body>
+</html>
